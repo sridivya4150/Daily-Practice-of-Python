@@ -64,7 +64,7 @@ first_item, second_item, third_item, *rest = numbers
 print(first_item)     
 print(second_item)  
 print(third_item)     
-print(rest)   
-   
+print(rest)
+
 
 
