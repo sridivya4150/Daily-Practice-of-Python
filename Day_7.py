@@ -39,5 +39,5 @@ squares = []
 for x in numbers:
     squares.append(x * x)
 print(squares)
-#
+
 
