@@ -49,7 +49,7 @@ print(c8)
 #method3
 r1, i1= map(float, input("Enter real and imaginary: ").split())
 equa=complex(r1,i1)
-print(r1, i1)
+print(equa)
 #random numbers
 import random
 print(random.randrange(1,10))
