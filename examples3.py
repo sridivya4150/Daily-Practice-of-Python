@@ -50,3 +50,4 @@ print("is given string is palindrome:",title1[:]==title1[::-1])
 #Input an email-like string and check if it contains '@' and '.'.
 email=input('enter your email ID:')
 print('@' in email and '.' in email)
+
