@@ -41,3 +41,10 @@ list1 = [1, 2, 3]
 list2 = list1.copy()
 print(list1 == list2)   
 print(list1 is list2) 
+#create a llst and count its length
+number=[41,25,37,48,90]
+print(len(number))
+#nested list -- list inside list(adding list inside list by using append)
+list=[41,20,98,34,60]
+list.append([45,69])#by using nested list we can create matrix
+print(list)
