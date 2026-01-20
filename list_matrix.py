@@ -16,4 +16,22 @@ print(matrix[1])
 #Access column elements
 for row in matrix:
     print(row[0])     # First column elements
+#taking matrix elements from  user
+rows = int(input("rows: "))
+col = int(input("columns: "))
 
+matrix = [] 
+print("entries row-wise:")
+
+for i in range(rows):   
+    row = []
+    for j in range(col):
+        row.append(int(input()))    # user input for rows
+    matrix.append(row)  # adding rows to the matrix
+
+print("\nyour matrix:")
+
+for i in range(rows):
+    for j in range(col):
+        print(matrix[i][j], end=" ")
+    print()
