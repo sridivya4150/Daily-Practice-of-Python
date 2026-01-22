@@ -43,44 +43,83 @@ matrix=[
 matrix[1][1]=6
 print(matrix)
 #by using negative matrix
-matrix=[-1][-1]=9
+matrix[-1][-1]=9
 print(matrix)
 #mathematical operations with matrix 
 #Addition using loops
 x = [[1,2,3],[4,5,6]]
 y = [[4,6,7],[9,7,1]]
-
 # initialize result matrix
 res = [[0 for j in range(len(x[0]))] for i in range(len(x))]
-
 # addition using loops
 for i in range(len(x)):
     for j in range(len(x[0])):
         res[i][j] = x[i][j] + y[i][j]
-
 print("matrix addition:")
 for r in res:
     print(r)
-
 # addition using list comprehension
 addition_res = [[x[i][j] + y[i][j] for j in range(len(x[0]))]
-                                      for i in range(len(x))]
+for i in range(len(x))]
 print("matrix addition:")
 for row in addition_res:
     print(row)
-
 # subtraction using loops
 for i in range(len(x)):
     for j in range(len(x[0])):
         res[i][j] = x[i][j] - y[i][j]
-
 print("subtraction:")
 for r in res:
     print(r)
-
 # subtraction using list comprehension
 subtraction_res = [[x[i][j] - y[i][j] for j in range(len(x[0]))]
-                                         for i in range(len(x))]
+for i in range(len(x))]
 print("subtraction:")
 for row in subtraction_res:
+    print(row)
+#multiplication of matrix
+x=[[2,4,6,],
+   [8,10,12],
+   [14,16,18]]
+y=[[1,2,3],
+   [4,5,6],
+   [7,8,9]]
+mul_res=[[0 for j in range(len(x[0]))] for i in range(len(x))]
+for i in range(len(x)):
+    for j in range(len(x[0])):
+        mul_res[i][j]=x[i][j]*y[i][j]
+print("multiplication of matrix:")
+for row in mul_res:
+    print(row)
+#multiplication of matrix using list comprehension
+mul_res=[[x[i][j]*y[i][j] for j in range(3)] for i in range(3)]
+print("multiplication of matrix:")
+for row in mul_res:
+    print(row)
+#division of matrix
+div=[[0 for j in range(len(x[0]))] for i in range(len(x))]
+for i in range(len(x)):
+    for j in range(len(x[0])):
+        div[i][j]=x[i][j]/y[i][j]
+print("matrix divison:")
+for row in div:
+    print(row)
+#matrix division using list comprehension
+div_res=[[x[i][j]/y[i][j] for j in range(len(x[0]))] for i in range(len(x))]
+print("matrix division using list comprehension:")
+for row in div_res:
+    print(row)
+#Transpose of a matrix
+transpose=[[0 for j in range(len(x))]
+for j in range(len(x[0]))]
+for i in range(len(x)):
+    for j in range(len(x[0])):
+        transpose[j][i]=x[i][j]
+print("transpose of matrix:")
+for row in transpose:
+    print(row)
+#matrix transpose using list comprehension
+transpose = [[x[i][j] for i in range(len(x))]
+for j in range(len(x[0]))]
+for row in transpose:
     print(row)
