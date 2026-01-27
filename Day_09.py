@@ -149,7 +149,19 @@ b={3,4}
 print(b.issubset(a))
 #issuperset()-'>'">="--returns true if this frozenset is a superset of another
 print(a.issuperset(b))
-
+#set methods
+#add()-adds an element to the set
+fruits={"apple","banana","cherry"}
+fruits.add("grape")
+print(fruits)
+#clear()-removes all the elements fromt the set
+fruits.clear()
+print(fruits)
+#copy()-returns a copy of the set
+set1={12,2,3,4}
+set2=set1.copy()
+print(set3)
+#pop()-removes an random element from the set
 
 
 
