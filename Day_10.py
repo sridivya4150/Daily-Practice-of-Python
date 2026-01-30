@@ -32,9 +32,28 @@ exam={
 
 }
 print(exam)
-#constructing dictionary using dict()
-person = dict(name = "John", age = 36, country = "Norway")
-print(person)
-print(type(person))
-
+#Accessing Dictionary items-by referring key,get(),keys(),values()
+#by using referring keys
+print(exam["name"])
+#by using get()
+d = { 
+    "name": "Kat",
+    1: "Python", 
+    (1, 2): [1,2,4] 
+    }
+print(d.get(1))
+#by using keys()-by using this method will return a list of all the keys in the dictionary
+x=d.keys()
+print(x)
+#changes done to the dictionary will be reflected in the keys list.
+d["age"]=22
+print(x)
+#values()-method will return a list of all the values in the dictionary
+y=d.values()
+print(y)
+#any changes done in dictionary will be reflected in the values first
+d["gender"]="Male"
+print(y)
 #
+
+
