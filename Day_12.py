@@ -35,6 +35,7 @@ while a<6:
     break
 else:
     print("loop not ended naturally")
+    
 
 
 
