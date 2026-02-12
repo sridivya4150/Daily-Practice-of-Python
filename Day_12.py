@@ -1,4 +1,4 @@
-#python loops-while,for,for each
+#python loops-while,for
 #while-it execute a set of statements as long as a condition is true
 i=1
 while i>5:
@@ -35,7 +35,55 @@ while a<6:
     break
 else:
     print("loop not ended naturally")
-    
+#challenge
+i=1
+print("-challenge start-")
+while i<6:
+    if i==3:
+        i+=1
+        continue
+    print(i)
+    i+=1
+else:
+    print("Loop finished!")
+#for loop-- it is used for iterating over a sequence 
+#loop through string
+for j in "apples":
+    print(j)
+#the break statement--the statement we can stop the loop before it has looped through all the items
+fruits=[1,2,3,4,5]
+for i in fruits:
+    print(i)
+    if i==4:
+        break
+print("loop ended")
+for j in fruits:
+    if j==3:
+        break
+    print(j)
+#continue statement--we can stop the current iteration of the loop,and continue with the next
+for k in fruits:
+    if k==3:
+        continue
+    print(k)
+#range() function
+#to loop through a set of code a specified number of times, we can use the range().
+#starting from 0 by default, and increments by 1 (by default),and ends at a specified number
+for x in range(6):
+    print(x)
+#specifying the starting value by adding a parameter
+for x in range(2,6):
+    print(x)
+#default increment the sequence by 1, specify the increment value by adding a third parameter
+for x in range(2,30,3):
+    print(x)
+print("decrement")
+#specifing decrement- by using -
+for x in range(30,2,-3):
+    print(x)
+
+
+      
 
 
 
