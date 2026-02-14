@@ -81,7 +81,30 @@ print("decrement")
 #specifing decrement- by using -
 for x in range(30,2,-3):
     print(x)
-
+#nested  loops
+#inner loop will be executed one time for each iteration of the outer loop
+number=[1,2,3]
+names=["ravi","raju","keerthi"]
+for i in number:
+    for j in names:
+        print(i,".",j)
+#pass statement-used to create empty for loop
+for x in [1,2,3]:
+    pass
+#challenge
+# Create the fruits list
+fruits=["apple","banana","cherry"]
+# Loop through fruits, break at "banana"
+for x in fruits:
+    if x=="banana":
+        break
+    print(x)
+# Use range(6) to print 0-5
+for y in range(6):
+    print(y)
+# Loop through the letters in "banana"
+for j in "banana":
+    print(j)
 
       
 
