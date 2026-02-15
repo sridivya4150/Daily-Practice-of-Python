@@ -28,8 +28,46 @@ while i<=sum:
     i+=1
 print(fact)
 #Reverse a Number(using while loop)
-
-
+number=1234
+result=0
+while number>0:
+    remainder=number%10
+    result=result*10+remainder
+    number=number//10
+print(result)
+#Count Digits in a Number
+input=56789
+count=0
+while input>0:
+    count+=1
+    input=input//10
+print("the number of digits is:",count)
+#Check Palindrome Number
+num=input("enter your number:")
+reverse=" "
+for i in reverse:
+    reverse=i+reverse
+if reverse==num:
+    print("the input you given is palindrome")
+else:
+    print("the input you given is not a palindrome")
+#Prime Number Check
+number=int(input("enter a number:"))
+if number<=1:
+    print("not a prime")
+else:
+    for i in range(2,number):
+        if number%i==0:
+            print("not a prime")
+            break
+    else:
+        print('prime')
+#Fibonacci Series (First 10 terms)
+a=0
+b=1
+for i in range(10):
+    print(a,end='')
+    a,b=b,a+b
 
     
 
