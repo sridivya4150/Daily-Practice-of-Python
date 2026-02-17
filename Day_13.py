@@ -6,3 +6,9 @@ def addition():
     sum=a+b
     print(sum)
 addition()
+#return values-function can send data back to the code that called them using the return statement.
+def get_greeting():
+    return "hello from a function"
+message = get_greeting()
+print(message)
+
