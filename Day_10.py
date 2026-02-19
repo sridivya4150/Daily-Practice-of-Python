@@ -22,7 +22,7 @@ car = {
 print(car)
 #Dictionary length
 print(len(car))
-#Dictionarycan store any data type
+#Dictionary can store any data type
 exam={
     'name':'student1',
     'class':12,
@@ -44,7 +44,6 @@ d = {
     }
 print(d.get(1))
 #by using keys()-by using this method will return a list of all the keys in the dictionary
-#----------------------------------------------------------------------------------------------------------------------------------------
 x=d.keys()
 print(x)
 #changes done to the dictionary will be reflected in the keys list.
