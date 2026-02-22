@@ -65,7 +65,9 @@ animal(name="jen",type="cat")
 animal("rat","buddy")
 #switching the order changes the result
 animal("lucy","dog")
-
+def animal(*name):
+    print("i have a pet",name[1])
+animal("dog","cat","sheep","rat")
 
 
 
