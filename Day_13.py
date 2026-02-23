@@ -67,6 +67,7 @@ animal("rat","buddy")
 animal("lucy","dog")
 def animal(*name):
     print("i have a pet",name[1])
+    print("i have a pet",name[0])
 animal("dog","cat","sheep","rat")
 
 
