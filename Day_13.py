@@ -65,10 +65,41 @@ animal(name="jen",type="cat")
 animal("rat","buddy")
 #switching the order changes the result
 animal("lucy","dog")
+def funt(a,b):
+    return a+b
+result=funt(4,5)
+print(result)
+#specifying that function can have only positional arguments
+def greeting(name,/):
+    print("Hello",name)
+greeting("john")#if we specify the keyword arguments it shows error
+#like that we can only take keyword-only arguments by given * before the parameters
+def greetings(*,name):
+    print("Hello",name)
+greetings(name="mary")
+#combining positional-only and keyword only
+def addit(a,b,/,*,c,d):
+    return a+b+c+d
+result=addit(5,10,c=15,d=8)
+print(result)
+#args and kwargs
 def animal(*name):
+#args becomes a tuple containing all the passed arguments
+    print("Type:",type(name))
     print("i have a pet",name[1])
     print("i have a pet",name[0])
 animal("dog","cat","sheep","rat")
+#combining *args with regular arguments
+def  my_fun(greeting,*names):
+    for name in names:
+        print(greeting,name)
+my_fun("hello","emil","tobias","linus")
+#arbitrary keyword arguments-**kwargs--it allows function to take any number of arguments
+def my_func(**name):
+    print("hello,my name is :"+name["fname"])
+my_func(fname="sean",lname="paul")
+
+
 
 
 
