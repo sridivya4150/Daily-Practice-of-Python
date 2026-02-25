@@ -98,6 +98,18 @@ my_fun("hello","emil","tobias","linus")
 def my_func(**name):
     print("hello,my name is :"+name["fname"])
 my_func(fname="sean",lname="paul")
+#unpacking arguments--using *,** operators
+def unpack(a,b,c):
+    return a+b+c
+numbers=[1,2,3]
+result=unpack(*numbers)
+print(result)
+def unpacking(fname,lname):
+    print("Hello",fname,lname)
+person={"fname":"emil","lname":"refsnes"}
+unpacking(**person)
+
+
 
 
 
