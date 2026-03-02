@@ -105,7 +105,7 @@ for y in range(6):
 # Loop through the letters in "banana"
 for j in "banana":
     print(j)
-
+  
       
 
 
