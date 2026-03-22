@@ -109,7 +109,7 @@ def unpacking(fname,lname):
 person={"fname":"emil","lname":"refsnes"}
 unpacking(**person)
 #scope-local,global,built-in
-#  
+
 
 
 
