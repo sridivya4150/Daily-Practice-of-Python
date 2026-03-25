@@ -109,10 +109,71 @@ def unpacking(fname,lname):
 person={"fname":"emil","lname":"refsnes"}
 unpacking(**person)
 #scope-local,global,built-in
-
-
-
-
+#scope of a variable is the region of a program where the variableis accessible
+#local scope-a variable created inside a function belongs to the local scope of that function and can only be used inside the function
+def local():
+    x=23
+    return x
+print(local())
+# variable which having the local scope will available for any funciton inside the function
+def app():
+    x=67
+    def innerapp():
+        a=10
+        return a+x
+    print(innerapp())
+    return x
+print(app())
+ #gloval scope-a variable created in main body of the python code is a global variable and available frome within any scope,global and local
+g=10
+def var():
+    a=56
+    return a+g
+print(var()) 
+print(g)
+'''if we take same variable name inside and outside of a function,
+python will treat them as two separate variables instead of one.
+'''
+h=68
+def hi():
+    h=89
+    return h
+print(hi())
+print(h)
+#we can create the global variable inside the local scope of the function by using 'global' keyword
+def hello():
+    global g
+    g=10
+print(g)
+def hel():
+    h=90
+    return g+h
+print(hel())
+#we can modify the global variable value inside the function by using global
+#nonlocal-nonlocal is used to modify a variable in the outer (enclosing) function.
+def rig():
+    x=89
+    def gir():
+        nonlocal x
+        x=56
+        print(x)
+    gir()
+    return x
+print(rig())
+#The LEGB Rule
+"""LEGB rule is the order in which Python searches for a variable name in different 
+scopes: Local, Enclosing, Global, and Built-in
+"""
+x = "global"
+def outer():
+  x = "enclosing"
+  def inner():
+    x = "local"
+    print("Inner:", x)
+  inner()
+  print("Outer:", x)
+outer()
+print("Global:", x)
 
 
 
